@@ -4,7 +4,8 @@
   "description": "HomeWork_001",
   "main": "main.js",
   "bin": {
-    "dateUtill": "./002_console_dates.js"
+    "dateUtill": "./002_console_dates.js",
+    "startGame": "./002_console_game.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
