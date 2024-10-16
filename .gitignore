@@ -4,4 +4,4 @@ eslint.config.mjs
 config.js
 .env
 .vscode
-file_storage/*
+file_storage/*.txt
