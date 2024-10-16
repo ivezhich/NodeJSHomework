@@ -1,3 +1,3 @@
 # NodeJSHomework
-# 004-stream. Дла запуска выполнить команду:
-# startGame Start -l logFile 
+# 005_http. Дла запуска выполнить команду:
+# npm run dev -- --city Moscow 
