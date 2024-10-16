@@ -1,7 +1,7 @@
 
 const express = require('express');
 const router = express.Router();
-const { multer, BOOK_FOLDER } = require('../middleware/file');
+const { multer, STORAGE_PATH } = require('../middleware/file');
 const path = require('node:path');
 
 const { v4: uuid } = require('uuid');
@@ -117,7 +117,7 @@ router.get('/:id/download', (req, res) => {
     const idx = books.findIndex(el => el.id === id);
 
     if (idx !== -1) {
-        res.download(path.join(BOOK_FOLDER, books[idx].fileBook), books[idx].fileName);
+        res.download(path.join(STORAGE_PATH, books[idx].fileBook), books[idx].fileName);
     } else {
         res.status(404);
         res.json('Code: 404');
