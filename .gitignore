@@ -3,3 +3,4 @@ eslint.config.mjs
 *.log
 config.js
 .env
+.vscode

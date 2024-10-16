@@ -2,20 +2,23 @@
   "name": "001",
   "version": "1.0.0",
   "description": "HomeWork_005",
-  "main": "005_http.js",
+  "main": "006_express.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node -r dotenv/config 005_http.js"
+    "dev": "nodemon 006_express.js",
+    "debug": "nodemon --inspect 006_express.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.4.0",
+    "dotenv": "^16.4.5",
     "eslint": "^9.4.0",
     "globals": "^15.3.0",
-    "dotenv": "^16.4.5"
+    "nodemon": "^3.1.7"
   },
   "dependencies": {
-    "yargs": "^17.7.2"
+    "express": "^4.21.1",
+    "uuid": "^10.0.0"
   }
 }
