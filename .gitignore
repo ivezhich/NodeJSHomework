@@ -1,7 +1,0 @@
-node_modules
-eslint.config.mjs
-*.log
-config.js
-.env
-.vscode
-file_storage
