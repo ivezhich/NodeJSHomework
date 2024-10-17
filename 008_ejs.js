@@ -6,10 +6,11 @@ const logger = require('./middleware/logger');
 
 const app = express();
 app.use(express.json());
+app.set('view engine', 'ejs');
 
 app.use(logger);
-app.use('/api/books', booksRouter);
-app.use('/api/user', userRouter);
+app.use('/', booksRouter);
+app.use('/user', userRouter);
 app.use(error404);
 
 const PORT = process.env.PORT || 3000;
